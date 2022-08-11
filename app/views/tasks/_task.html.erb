@@ -1,0 +1,18 @@
+<% if dom_id task%>
+<table>
+<tr> 
+<th>Name:</th>
+<th>Duedate:</th>
+<th>Status:</th>
+
+
+</tr>
+
+<tr id="<%= dom_id task %>">
+<td><%= task.name %></td>
+<td> <%= task.duedate %></td>
+<td><%= task.status %></td>
+</tr>
+</table>
+
+<%end %>
