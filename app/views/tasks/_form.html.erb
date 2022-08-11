@@ -11,22 +11,23 @@
     </div>
   <% end %>
 
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
+  <tr>
+   <td><%= form.label :name, style: "display: block" %></td> 
+   <td><%= form.text_field :name %></td>
+    
+  </tr>
 
-  <div>
-    <%= form.label :duedate, style: "display: block" %>
-    <%= form.date_field :duedate %>
-  </div>
+  <tr>
+  <td> <%= form.label :duedate, style: "display: block" %></td>
+  <td><%= form.date_field :duedate %></td>
+   </tr>
 
-  <div>
-    <%= form.label :status, style: "display: block" %>
-    <%= form.check_box :status %>
-  </div>
-
-  <div>
+  <tr>
+  <td><%= form.label :status, style: "display: block" %></td>
+  <td><%= form.check_box :status %></td>
+    <tr>
+    <tr> <div>
     <%= form.submit %>
-  </div>
+  </div></tr>
+ 
 <% end %>

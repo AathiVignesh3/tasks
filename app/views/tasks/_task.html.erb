@@ -1,18 +1,23 @@
-<% if dom_id task%>
+<%
+=begin%>
+ <% if dom_id task%>
+
 <table>
-<tr> 
-<th>Name:</th>
-<th>Duedate:</th>
-<th>Status:</th>
-
-
-</tr>
-
-<tr id="<%= dom_id task %>">
+<tr id="<%= dom_id task %>"> 
+<%
+=end%>
 <td><%= task.name %></td>
 <td> <%= task.duedate %></td>
-<td><%= task.status %></td>
-</tr>
+<% if  task.status %>
+<td>Complete</td>
+    <%else%>
+<td>Pending</td>
+<%end%>
+<%
+=begin%>
+ </tr>
 </table>
 
-<%end %>
+<%end %> 
+<%
+=end%>
